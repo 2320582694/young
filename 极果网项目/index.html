@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>极果网</title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/mycss.css"/>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/myjs.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header id="myheader">
+			<div class="head-warp">
+				<div class="logo">
+					<a href="">
+						<img src="jgimgs/header-logo@2x.png" class="h50" />
+					</a>
+				</div>
+				<div class="warp-search">
+					<div class="warp-search-warp">
+						<form class="search-lef-sub">
+							<input type="text" />
+							<div class="search-lef-btn">
+								<button type="submit"/>搜索</button>
+							</div>
+						</form>
+						<div  class="warp-search-rig">
+							<a href="">全部分类</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--导航栏-->
+		<nav id="mynav">
+			<div id="navwarp">
+				<div class="nav-lf lf">
+					<ul>
+						<li class="head"><a href="">首页</a></li>
+						<li><a href="">酷玩</a></li>
+						<li><a href="">导购</a></li>
+						<li><a href="">试用</a></li>
+						<li><a href="">报告</a></li>
+					</ul>
+				</div>
+				<div class="nav-rig rt">
+					<ul>
+						<li><a id="mylogin" data-toggle="modal" data-target="#mymodal" href="javascript:void(0)">登录</a></li>
+						<span class="span1"></span>
+						<li><a href="register.html">注册</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+		<!--吸顶导航栏-->
+		<nav id="XDmynav">
+			<div id="XDnavwarp">
+				<div class="logo lf">
+					<h1>
+						<a href=""><img src="jgimgs/header-logo@2x.png"/></a>
+					</h1>
+				</div>
+				<div class="menu rt">
+					<div class="menu-box">
+						<div class="menu-warp lf">
+							<ul>
+								<li class="home"><a href="">首页</a></li>
+								<li><a href="">试用</a></li>
+								<li><a href="">新品</a></li>
+								<li><a href="">折扣</a></li>
+								<li><a href="">清单</a></li>
+								<li><a href="">体验</a></li>
+								<li class="tiyanshi"><a href="">体验师</a></li>
+								<li class="APP">
+									<a href="#" id="app-a">APP下载</a>
+									<div class="app-download">
+										<div class="block">
+											<div class="tc">
+												<img src="jgimgs/footer-erweima-1.png" alt="极果客户端二维码下载" />
+												<div class="tc-info">扫描下载极果客户端</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li><a href="">行业资讯</a></li>
+							</ul>
+						</div>
+						<div class="menu-user rt">
+							<div class="serch">
+								<span></span>
+							</div>
+							<div class="logininfo">
+								<a class="login" id="mylogin2" href="javascript:void(0)">登录</a>
+								<span class="span1">|</span>
+								<a class="register" href="">注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--轮播图-->
+		<div id="mybanner">
+			<div class="banner">
+				<div class="bd">
+					<ul class="img-ul">
+						<li  class="listitem">
+							<div class="">
+								<a href="">
+									<img src="jgimgs/original.jpg" id="fis-tp"/>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<a href="">
+									<img src="jgimgs/original1.jpg"/>
+								</a>	
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<a href="">
+									<img src="jgimgs/original2.jpg"/>
+								</a>	
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<a href="">
+									<img src="jgimgs/original3.jpg"/>
+								</a>	
+							</div>
+						</li>
+						<li>
+							<div class="">
+								<a href="">
+									<img src="jgimgs/original4.jpg"/>
+								</a>	
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="bt-icon">
+					<ul class="b-page-con">
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="lr-icon">
+					<div class="pos-rel">
+						<a id="bn-prve" href="javascript:void(0)" class="prve "><i class="iconfont icon-xiangyou1"></i></a>
+					</div>
+					<div class="pos-rel">
+						<a id="bn-next" href="javascript:void(0)" class="next "><i class="iconfont icon-xiangzuo-copy"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--热门相关-->
+		<div id="hot-relevant">
+			<div class="hot-rel-warp">
+				<div class="hot-top">
+					<a href="" class="ft-16 on">热门试用</a>
+					<i class="vertical-line"></i>
+					<a href="" class="ft-16">折扣试用</a>
+					<i class="vertical-line"></i>
+					<a href="" class="ft-16">专享试用</a>
+					<div class="rt hot-rg-top">
+						<!--上下滚动广告栏-->
+						<div id="Ad-column">
+							<div class="rg-warp">
+								<ul id="notice">
+									<li><a href=""><i class="iconfont icon-icon"></i><b>专享试用</b>&nbsp;&nbsp;卷卷绿&nbsp;抢到1个&nbsp;金指码I5指纹锁</a></li>
+									<li><a href=""><i class="iconfont icon-icon"></i><b>专享试用</b>&nbsp;&nbsp;龙村后生&nbsp;抢到1支&nbsp;素士X3白金升级版声波电动牙刷</a></li>
+									<li><a href=""><i class="iconfont icon-icon"></i><b>专享试用</b>&nbsp;&nbsp;小蜗牛&nbsp;抢到1双&nbsp;CRISPI登山徒步鞋</a></li>
+									<li><a href=""><i class="iconfont icon-icon"></i><b>专享试用</b>&nbsp;&nbsp;Floyd 抢到1个Comfort&nbsp;Revolution凝胶记忆棉枕</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--商品信息-->
+				<div class="hot-event">
+					<div class="hot-event-scroll">
+						<ul id="hot-event-box">
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm1.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm2.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm3.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li style="margin-right: 0;">
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm4.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm5.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm6.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm7.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li style="margin-right: 0;">
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm8.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm9.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm10.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm11.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li style="margin-right: 0;">
+								<a href="">
+									<div class="scroll-cell">
+										<div class="pos-rel img-info">
+											<span class="tag">折扣</span>
+											<img src="jgimgs/rm12.jpg" alt="" />
+										</div>
+										<div class="desc-box pos-rel">
+											<div class="desc-box-bot">
+												<h4>SKG高端燕窝养生壶</h4>
+												<div class="e-number">
+													<div class="e-number-info">
+														<p class="e-apply-num lf">
+															<span class="red">39人</span>
+															参与
+														</p>
+														<p class="e-days rt">剩余事件：22天</p>
+													</div>
+												</div>
+												<div class="e-item-hide" style="display:none;">
+													<div class="e-item-hide-cell">
+														<span class="gray ">
+															App专享（余5台/共10台）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															免费试用（5台）
+														</span>
+														<span class="rt">
+															34人申请
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															3.5折试用（未开始）
+														</span>
+														<span class="rt">
+															￥209.65
+														</span>
+													</div>
+													<div class="e-item-hide-cell">
+														<span class="gray">
+															购买
+														</span>
+														<span class="rt">
+															￥599
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="load-hot-warp" id="myclick">
+							<div class="load-boxshandow"></div>
+							<div href="" id="myclick">
+								<span>展开更多</span>
+								<i class="iconfont icon-xialajiantou"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="discount-event"></div>
+				<div class="vip-event"></div>
+			</div>
+		</div>
+		<!--精选-->
+		<div id="Selected">
+			<div class="Selected-warp">
+				<div class="Selected-warp-top">
+					<h3 class="lf">精选</h3>
+				</div>
+				<div class="Selected-event-warp">
+					<div class="Sl-ev-wp-content">
+						<ul class="respond">
+							<!--折扣-->
+							<li>
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6401.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+							<!--体验-->							
+							<li class="medium">
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6402.jpg"/>
+									</div>
+									<div class="desc-box pos-abs">
+									<div class="desc-box-inner">
+										<div class="d-title ft-18">声波洁牙，超长续航还防水—Oclean电动牙刷体验 | 视频</div>
+										<div class="a-user-info">
+											<span class="gray ft-12 lf username">无敌金刚 · 2小时前</span>
+											<div class="query-num rt">
+												<span class="gray"><i class="iconfont icon-dianzan1"></i> 0</span>
+												<span class="gray"><i class="iconfont icon-xiaoxi01"></i> 0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣121-->
+							<li class="mr0">
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6403.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣-->
+							<li>
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6404.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣-->
+							<li>
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6405.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--体验-->							
+							<li class="medium mr0">
+										<a href="">
+											<div class="choice-img-box">
+												<img src="jgimgs/6406.jpg"/>
+											</div>
+											<div class="desc-box pos-abs">
+												<div class="desc-box-inner">
+													<div class="d-title ft-18">声波洁牙，超长续航还防水—Oclean电动牙刷体验 | 视频</div>
+													<div class="a-user-info">
+														<span class="gray ft-12 lf username">无敌金刚 · 2小时前</span>
+														<div class="query-num rt">
+															<span class="gray"><i class="iconfont icon-dianzan1"></i> 0</span>
+															<span class="gray"><i class="iconfont icon-xiaoxi01"></i> 0</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<span class="tag">折扣</span>
+										</a>
+							</li>
+							<!--折扣-->
+							<li class="minw350">
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6407.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣-->
+							<li class="minw350">
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6408.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣-->
+							<li class="mr0 minw350">
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6409.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--折扣-->
+							<li>
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6401.jpg"/>
+								</div>
+								<div class="desc-box">
+									<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+									<div class="favourable">
+										<span class="red ft-18">￥89</span>
+										<span class="red ft-14">历史最低</span>
+									</div>
+									<div class="d-number">
+										<span class="gray ft-12">优集品</span>
+										<span class="gray ft-12 rt">30分钟前</span>
+									</div>
+								</div>
+								<span class="tag">折扣</span>
+							</a>
+							</li>
+							<!--体验-->							
+							<li class="medium">
+							<a href="">
+								<div class="choice-img-box">
+									<img src="jgimgs/6402.jpg"/>
+							
+								</div>
+									<div class="desc-box pos-abs">
+										<div class="desc-box-inner">
+											<div class="d-title ft-18">声波洁牙，超长续航还防水—Oclean电动牙刷体验 | 视频</div>
+											<div class="a-user-info">
+												<span class="gray ft-12 lf username">无敌金刚 · 2小时前</span>
+												<div class="query-num rt">
+													<span class="gray"><i class="iconfont icon-dianzan1"></i> 0</span>
+													<span class="gray"><i class="iconfont icon-xiaoxi01"></i> 0</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>	
+							<!--折扣-->
+							<li class="mr0">
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6405.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+							<!--折扣-->
+							<li>
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6411.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+							<!--折扣-->
+							<li>
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6412.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+							<!--折扣-->
+							<li>
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6413.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+							<!--折扣-->
+							<li class="mr0 wd258">
+								<a href="">
+									<div class="choice-img-box">
+										<img src="jgimgs/6414.jpg"/>
+									</div>
+									<div class="desc-box">
+										<div class="ft-18 goods-info">熊本熊充电宝：暖手充电两不误，造型可爱手感舒适</div>
+										<div class="favourable">
+											<span class="red ft-18">￥89</span>
+											<span class="red ft-14">历史最低</span>
+										</div>
+										<div class="d-number">
+											<span class="gray ft-12">优集品</span>
+											<span class="gray ft-12 rt">30分钟前</span>
+										</div>
+									</div>
+									<span class="tag">折扣</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--精选底部-->
+					<div class="page-box">
+						<ul>
+							<li class="frist hidden">
+								<a href="">首页</a>
+							</li>
+							<li class="prev hidden">
+								<a href="">上一页</a>
+							</li>
+							<li class="page active">
+								<a href="">1</a>
+							</li>
+							<li class="page">
+								<a href="">2</a>
+							</li>
+							<li class="page">
+								<a href="">3</a>
+							</li>
+							<li class="page">
+								<a href="">4</a>
+							</li>
+							<li class="page">
+								<a href="">5</a>
+							</li>
+							<li class="page">
+								<a href="">6</a>
+							</li>
+							<li class="morepage">
+								<a href="">...</a>
+							</li>
+							<li class="next"><a href="">下一页</a></li>
+							<li class="last"><a href="">末页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--右边侧边条-->
+		<div id="ri-warp">
+			<a href="">
+				<div class="query-spend-box">
+					<i class="call-i iconfont icon-dianhua"></i>
+					<div class="call-info">
+						<p class="ft-16 call-number">400-000-0000</p>
+						<p class="ft-12 call-time">周一到周五 10:00-19:00</p>
+					</div>
+				</div>
+			</a>
+			<a href="">
+				<div class="query-spend-box">
+					<i class="wx-i iconfont icon-weixin"></i>
+					<div class="wx-info query-content">
+						<div class="wx-erweima"><img src="jgimgs/footer-erweima-2@2x.png" alt="" /></div>
+						<p class="ft-12 wx-txt">极果平平微信：jiguopp</p>
+					</div>
+				</div>
+			</a>
+			<a href="">
+				<div class="query-spend-box">
+					<i class="fk-i iconfont icon-yijianfankui"></i>
+				</div>
+			</a>
+			<a href="#">
+				<div class="query-spend-box query-top" >
+					<i class="jt-i iconfont icon-zhidingjiantou" id="query-top"></i>
+				</div>
+			</a>
+		</div>	
+		<!--底部开始-->
+		<footer>
+			<div class="overhid main">
+				<div class="company-desc">
+					<div class="logo lf">
+						<a href=""><img src="jgimgs/header-logo@2x.png"/></a>
+					</div>
+					<div class="list-item lf">
+						<div class="dl-map clear">
+		                    <dl>
+		                        <dt>免费试用</dt>
+		                        <dd><a href="">试用流程</a></dd>
+		                        <dd><a href="">如何提高成功率</a></dd>
+		                        <dd><a href="">体验师攻略</a></dd>
+		                    </dl>
+		                    <dl>
+		                        <dt>关于极果</dt>
+		                        <dd><a href="" target="">发展历程</a></dd>
+		                        <dd><a href="" target="">合作伙伴</a></dd>
+		                        <dd><a href="" target="">加入极果</a></dd>
+		                        <dd><a href="" target="">网站地图</a></dd>
+		                    </dl>
+		                    <dl>
+		                        <dt>商务合作</dt>
+		                        <dd><a href="" target="">产品试用</a></dd>
+		                        <dd><a href="" target="">营销服务</a></dd>
+		                        <dd><a href="" target="">电商导购</a></dd>
+		                        <dd><a href="" target="">优品分销</a></dd>
+		                        <dd><a href="" target="">联系我们</a></dd>
+		                    </dl>
+		                    <dl>
+		                        <dt>购买攻略</dt>
+		
+		                        <dd><a href="" target="">美亚海淘教程</a></dd>
+		                        <dd><a href="" target="">日亚海淘教程</a></dd>
+		                        <dd><a href="" target="">海淘转运攻略</a></dd>
+		                        <dd><a href="" target="">kickstarter 众筹购买攻略</a></dd>
+		                        <dd><a href="" target="">indiegogo 众筹购买攻略</a></dd>
+		                    </dl>
+		                </div>
+					</div>
+					<div class="footer-erweima rt">
+						<div class="footer-erweima-1">
+							<img src="jgimgs/footer-erweima-1.png"/>
+							<span>扫描下载极果手机客户端</span>
+						</div>
+						<div class="footer-erweima-2">
+							<img src="jgimgs/footer-erweima-2@2x.png"/>
+							<span>极果微信公众号: jguojguo</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="friendly-link main">
+				<div class="lf friend-link-title">友情链接</div>
+				<div class="rt friend-link-box">
+					<dl class="t4">
+		                <a href="http://www.zhidx.com" target="_blank">智东西</a>
+		<!--                <a href="http://it.sohu.com" target="_blank">搜狐IT</a>-->
+		                <a href="http://tech.qq.com/" target="_blank">腾讯科技</a>
+		                <a href="http://digi.it.sohu.com" target="_blank">搜狐数码</a>
+		                <a href="http://tech.ifeng.com" target="_blank">凤凰科技</a>
+		                <a href="http://digi.ifeng.com" target="_blank">凤凰数码</a>
+		                <a href="http://www.pcpop.com" target="_blank">泡泡网</a>
+		                <a href="http://www.geekpark.net/" target="_blank">极客公园</a>
+		                <a href="http://www.autotech.cn/" target="_blank">汽车科技</a>
+		                <a href="http://www.guoku.com/" target="_blank">果库</a>
+		<!--                <a href="http://www.imobile.com.cn/" target="_blank">手机之家</a>-->
+		                <a href="http://www.ibantang.com/" target="_blank">半糖</a>
+		                <a href="http://www.quwan.com/" target="_blank">趣玩网</a>
+		                <a href="http://www.b12.cn" target="_blank">B12</a>
+		                <a href="http://you.163.com/?from=web_in_yl" target="_blank">网易严选</a>
+		                <a href="http://www.iyiou.com/i/lingshou" target="_blank">新零售</a>
+		                <a href="http://www.iliangcang.com/" target="_blank">良仓</a>
+		                <a href="/html/hzhb.html#yqlj" target="_blank">更多</a>
+		            </dl>
+				</div>
+			</div>
+			<div class="footer-botoom">
+				<p>Copyright©2017&nbsp;极果&nbsp;All&nbsp;rights&nbsp;reserved.京ICP备14052927号</p>
+				<p>北京极智飞扬科技有限公司&nbsp;&nbsp;|&nbsp;&nbsp;010-82366768</p>
+				<p>北京市海淀区王庄路1号清华同方科技广场D座东楼805室</p>
+			</div>
+		</footer>
+		<!--登录弹出窗-->
+		<div class="layer-shade layer"></div>
+		<div class="login-layer layer">
+			<div class="close-icon iconfont icon-guanbi"></div>
+			<div class="dialog-warp">
+				<div class="dialog-inner">
+					<div class="lf dialog-input">
+						<div class="dialog-title">极果账号登录</div>
+						<div class="dialog-input-body">
+		                    <div class="dialog-input-arrow">
+		                        <label class="icon-input">
+		                        	<i class="iconfont icon-sjh-copy"></i>
+		                        	<input class="tel" data-login-username="" type="text" placeholder="手机号">
+		                        </label>
+		                    </div>
+		                    <div class="dialog-input-arrow">
+		                        <label class="icon-input">
+		                        	<i class="iconfont icon-suo"></i>
+		                        	<input class="pass" data-login-password="" type="password" placeholder="密码">
+		                        </label>
+		                    </div>
+		                    <div class="dialog-login-query mt-20">
+		                        <label><i class="icon icon-lock"></i><input type="checkbox" value="1" data-login-auto="">下次自动登录</label>
+		                        <div class="rt">
+		                            <a class="btn" id="window-login-submit" href="javascript:;">登录</a>
+		                        </div>
+		                    </div>
+		                    <div class="dialog-register-query">
+		                        <a href="register.html" target="_blank">注册新账号</a>
+		                        <a href="passwd.html" target="_blank" class="rt">忘记密码？</a>
+		                    </div>
+		                    <div id="layer">
+								<p>你输入的手机号尚未注册，请点击立即注册！</p>
+							</div>
+							<div id="t-non-empty">账号不能为空</div>
+							<div id="p-non-empty">密码不能为空</div>
+		                </div>
+					</div>
+					<div class="rt dialog-other">
+						<div class="dialog-top-tips">社交网络账号</div>
+						<div class="dialog-erweima">
+							<img src="jgimgs/wx.PNG" alt="" />
+						</div>
+						<div class="dialog-other-type">
+							<div class="small-icon">
+								<span class="iconfont icon-weibo">微博</span>
+								<i></i>
+								<span class="iconfont icon-qq1">QQ</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			#layer{
+				width: 400px;
+				height: 50px;
+				background-color:rgba(0,0,0,.6)!important;
+				position:absolute;
+				left:50%;
+				top:50%;
+				margin-top:-25px;
+				margin-left:-200px;
+				z-index: 20171014;
+				text-align: center;
+				border-radius: 5px;
+				display: none;
+			}
+			#layer p{
+				color: #fff;
+				margin: 12px auto;
+			}
+			#t-non-empty{
+				width: 100px;
+				height: 25px;
+				position: absolute;
+				top: 24%;
+				left:55%;
+				color: red;
+				z-index: 20171015;
+				display: none;
+			}
+			#p-non-empty{
+				width: 100px;
+				height: 25px;
+				position: absolute;
+				top: 40%;
+				left:55%;
+				color: red;
+				z-index: 20171015;
+				display: none;
+			}
+		</style>
+		
+	</body>
+</html>

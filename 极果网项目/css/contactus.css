@@ -1,0 +1,293 @@
+/*吸顶导航栏开始*/
+	*{padding: 0;margin: 0;}
+	.lf{
+		float: left;
+	}
+	.rt{
+		float: right;
+	}
+	a{
+		text-decoration: none;
+		color: #000;
+	}
+	li{
+		list-style: none;
+	}
+	body{
+		background: #f5f5f5;
+	}
+	
+	#XDmynav{
+		border-bottom: 1px solid #eee;
+	    position: relative;
+	    top: -75px;
+	    width: 100%;
+	    z-index: 5;
+	    font-size: 15px;
+	    font-weight: 400;
+	    background: #ffffff;
+	    height: 59px;
+	    border-top: 1px solid #fe584d;
+	    -webkit-transition-duration: .8s;
+	    transition-duration: .8s;
+	    -webkit-transition-property: -webkit-transform;
+	    transition-property: transform;
+	    -webkit-transition-timing-function: cubic-bezier(0.64, 0.15, 0.12, 0.97);
+	    transition-timing-function: cubic-bezier(0.64, 0.15, 0.12, 0.97);
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    will-change: transform;
+	}
+	.header-move{
+		transform:  translateY(75px);
+	}
+	#XDnavwarp{
+		height: 58px;
+		zoom: 1;
+		display: block;
+		clear: both;
+		width: 1080px!important;
+		margin: auto;
+		background: transparent;
+		position: relative;
+	}
+	#XDnavwarp .logo{
+		width: 160px;
+		margin-top: 12px;
+	}
+	#XDnavwarp .logo a{
+		display: block;
+		font-size: 0;
+	}
+	#XDnavwarp .logo h1 img{
+		height: 34px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	#XDnavwarp .menu{
+		width: 920px;
+	}
+	#XDnavwarp .menu-warp ul{
+		display: block;
+		zoom: 1;
+	}
+	.menu-warp ul li a:hover{
+		color: #fe584d!important;
+	}
+	.menu-warp ul li{
+	    display: block;
+		float: left;
+		position: relative;
+		line-height: 58px;
+		text-align: left;
+		width: 80px;
+		font-size: 16px;
+		font-family: "微软雅黑";
+	}
+	.menu-warp ul .home a{
+		color:#fe584d; 
+	}
+	.menu-warp ul .tiyanshi,.APP{
+		width: 95px;
+	}
+	#XDnavwarp .menu-user{
+		height: 58px;
+		line-height:58px ;
+	}
+	#XDnavwarp .menu-user .serch{
+		margin-top: 14px;
+		float: left;
+	}
+	#XDnavwarp .menu-user .logininfo .span1{
+	    width: 1px;
+	    height: 20px;
+	    padding-left: 20px;
+	    background: rgba(0,0,0,0);
+	    float: left;
+	}
+	#XDnavwarp .menu-user .login{
+	    font-size: 14px;
+	    padding-left: 20px;
+	    position: relative;
+	    float: left;
+	}
+	#XDnavwarp .menu-user .register{
+	    font-size: 14px;
+	    padding-left: 20px;
+	    position: relative;
+	    float: left;
+	}
+	.icon-weibiaoti--{
+		float: left;
+	    display: block;
+	    width: 15px;
+	}
+/*吸顶导航栏结束*/
+
+	/*主要内容*/
+	/*内容左边开始*/
+	.main{
+		display: block;
+		clear: both;
+		width: 1080px!important;
+		margin: auto;
+		background: transparent;
+		position: relative;
+	}
+	.help-title{
+		height: 50px;
+		line-height: 50px;
+		padding-left: 45px;
+		font-size: 15px;
+		color: #121316;
+	}
+	.helpleft{
+		width: 220px;
+		border: 1px solid #e7e7e7;
+		border-radius: 3px;
+		overflow: hidden;
+		background-color:#f9f9f9;
+		color: #121316;
+		font-size: 15px;
+		float: left;
+	}
+	.cell-row.on{
+		background-color: #fff;
+		border-bottom: 1px solid #e0e0e0;
+	}
+	.helpleft .cell-title{
+		border-bottom: 1px solid #E0E0E0;
+		padding-left: 43px;
+		cursor: pointer;
+		height: 48px;
+		line-height: 48px;
+	}
+	.cell-row{
+		position: relative;
+	}
+	.cell-row i{
+		position: absolute;
+		background-repeat: no-repeat;
+		left: 22px;
+	}
+	.helpleft ul{
+		padding: 15px 0;
+		display: none;
+		padding-top: 0px;
+	}
+	.helpleft li{
+		padding-left: 55px;
+		font-size: 12px;
+		height: 26px;
+		line-height: 26px;
+	}
+	.helpleft a{
+		color: #121316;
+	}
+
+
+/*底部开始*/
+	footer {
+	    background: #fdfdfd;
+	    border-top: 2px solid #fe584d;
+	    color: #b6b6b6;
+	    overflow: hidden;
+	    width: 100%;
+	    line-height: 36px;
+	}
+	.overhid{
+		overflow: hidden;
+		margin-top: 30px!important;
+		height: 176px;
+	}
+	.main{
+		display: block;
+	    clear: both;
+	    width: 1080px !important;
+	    margin: auto;
+	    background: transparent;
+	    position: relative;
+	}
+	.company-desc{
+		zoom: 1;
+	}
+	.company-desc .logo{
+		width: 200px;
+	}
+	.company-desc .logo img{
+		width: 135px;
+		height: auto;
+	}
+	footer .list-item{
+		width: 520px;
+		border-right: 1px solid #f0f0f0;
+	}
+	footer .list-item .dl-map dl{
+	    float: left;
+	    min-width: 115px;
+	    line-height: 24px;
+	    display: inline-block;
+	}
+	footer .list-item .dl-map dl dt{
+		font-size: 12px;
+	    color: #333333;
+	    margin-bottom: 8px;
+	}
+	footer .list-item .dl-map dl dd a{
+		font-size: 12px;
+		color: #999999;
+	}
+	footer .footer-erweima{
+		text-align: center;
+		color: #333333;
+	}
+	footer .footer-erweima .footer-erweima-1{
+		margin-right: 35px;
+	}
+	footer .footer-erweima img{
+		width: 140px;
+	    height: 140px;
+	    display: block;
+	}
+	footer .footer-erweima div{
+		float: left;
+		display: block;
+	}
+	footer .footer-erweima span{
+		font-style: normal;
+		font-size: 12px;
+	}
+ footer .friendly-link .friendly-link-box a{
+        margin-right: 14px;
+        display: inline-block;
+    }
+	.friendly-link{
+		line-height: 24px;
+		padding: 26px 0;
+		zoom: 1;
+		padding-bottom: 50px;
+	}
+	.friend-link-title{
+	    font-size: 12px;
+	    color: #333333;
+	}
+	footer .friend-link-box{
+	    float: right;
+		width: 985px;
+	}
+	footer .friend-link-box dl a{
+	    margin-right: 14px;
+		display: inline-block;
+		color: #999999;
+		font-size: 12px;
+	}
+	.footer-botoom{
+		text-align: center;
+	    background: #f4f4f4;
+	    font-size: 12px;
+	}
+	.footer-botoom p{
+		line-height: 24px;
+		display: block;
+	}
+	/*底部结束*/
